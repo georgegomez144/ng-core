@@ -7,8 +7,8 @@
   angular.module('ng-core', [
     'ngMaterial'
     ,'ngRoute'
-    ,'ngSanitize'
-    ,'ngCookies'
+    // ,'ngSanitize'
+    // ,'ngCookies'
 
     /*
     * Add additional dependencies below

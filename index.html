@@ -1,14 +1,17 @@
-<html lang="en" ng-app="ng-core">
+<html lang="en">
   <head>
     <base href="/">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ng-Core</title>
     <link rel="stylesheet" href="./libs/angular-material/1.1.1/angular-material.min.css">
     <link rel="stylesheet" href="./dist/css/ng-core.min.css">
   </head>
-  <body ng-controller="MainCtrl as Main">
+  <body ng-app="ng-core" ng-cloak>
 
-    <ng-view></ng-view>
+    <div ng-controller="MainCtrl as Main">
+      <ng-view></ng-view>
+    </div>
 
     <script src="./dist/js/angular-concat.js"></script>
     <script src="./dist/js/ng-core.min.js"></script>
