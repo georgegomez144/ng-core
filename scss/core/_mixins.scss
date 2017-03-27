@@ -1,0 +1,33 @@
+// Create your custom mixins here.....
+
+
+@mixin animate($type, $duration, $iteration-count, $timing) {
+  -webkit-animation-name: $type;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration-count;
+  -webkit-animation-timing-function: $timing;
+
+  -moz-animation-name: $type;
+  -moz-animation-duration: $duration;
+  -moz-animation-iteration-count: $iteration-count;
+  -moz-animation-timing-function: $timing;
+
+  animation-name: $type;
+  animation-duration: $duration;
+  animation-iteration-count: $iteration-count;
+  animation-timing-function: $timing;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($prop, $time) {
+  -webkit-transition: $prop $time;
+  -moz-transition: $prop $time;
+  -ms-transition: $prop $time;
+  transition: $prop $time;
+}
