@@ -1,18 +1,20 @@
 // Begin Ng core app here....
 
-'use strict';
+(function() {
 
-angular.module('ng-core',[
-   'ngMaterial'
-  ,'ngRoute'
-  // ,'ngSanitize'
-  // ,'ngCookies'
+  'use strict';
 
-  /*
-   * Add additional dependencies below
-   * Note: use the ',' before additional dependencies for
-   * easier dep managment
-  */
-  ,'CoreService'
-  ,'CoreFactory'
-]);
+  angular.module('ng-core', [
+    'ngMaterial'
+    ,'ngRoute'
+    ,'ngSanitize'
+    ,'ngCookies'
+
+    /*
+    * Add additional dependencies below
+    * Note: use the ',' before additional dependencies for
+    * easier dep managment
+    */
+  ]);
+
+})();

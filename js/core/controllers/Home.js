@@ -1,7 +1,11 @@
-angular.module('ng-core')
-  .controller('HomeCtrl',[
-    '$log',
-    function($log) {
-      
-    }
-  ]);
+(function() {
+  'use strict';
+  
+  angular.module('ng-core')
+    .controller('HomeCtrl',[
+      '$log',
+      function($log) {
+        
+      }
+    ]);
+})();

@@ -1,7 +1,11 @@
-angular.module('ng-core')
- .service('CoreService',[
-   '$log',
-   function($log) {
-     
-   }
- ]);
+(function() {
+  'use strict';
+  
+  angular.module('ng-core')
+    .service('CoreService',[
+      '$log',
+      function($log) {
+        
+      }
+    ]);
+})();

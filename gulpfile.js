@@ -1,3 +1,22 @@
+
+// APPLICATION NAME
+var appName = 'ng-core';
+
+// APPLICATION BUILD METHODS
+var dist = 'dist/';
+var distCss = dist + 'css/';
+var distJs = dist + 'js/';
+
+var temp = 'temp/';
+var tempCss = temp + 'css/';
+var tempJs = temp + 'js/';
+
+
+// ###########################################################
+// ###########  Begin Application Build ######################
+// ###########################################################
+
+
 // Include gulp
 var gulp = require('gulp');
 
@@ -16,7 +35,7 @@ var del = require('del');
 
 // SERVER METHODS
 const HOST = 'localhost';
-const PORT = 8000;
+const PORT = 7410;
 gulp.task('webserver', function() {
     gulp.src('./')
         .pipe(webserver({
@@ -28,19 +47,6 @@ gulp.task('webserver', function() {
             fallback: 'index.html'
         }));
 });
-
-
-// APPLICATION NAME
-var appName = 'calc';
-
-// APPLICATION BUILD METHODS
-var dist = 'dist/';
-var distCss = dist + 'css/';
-var distJs = dist + 'js/';
-
-var temp = 'temp/';
-var tempCss = temp + 'css/';
-var tempJs = temp + 'js/';
 
 // Lint Task
 var jsDir = 'js/';
@@ -129,6 +135,6 @@ gulp.task('watch', function () {
 // Default Task
 gulp.task('Gulpify', ['lint', 'clean:temp']);
 // Developing Task
-gulp.task('default', ['Gulpify', 'watch', 'webserver']);
+gulp.task('default', ['Gulpify', 'watch']);
 // Developing & Server Task
-gulp.task('run', ['Gulpify', 'watch', 'webserver']);
+gulp.task('serve', ['Gulpify', 'watch', 'webserver']);

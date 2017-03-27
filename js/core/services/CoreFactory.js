@@ -1,3 +1,6 @@
+(function() {
+  'use strict';
+  
   angular.module('ng-core')
     .factory('CoreFactory',[
       '$log',
@@ -7,3 +10,4 @@
         };
       }
     ]);
+})();
